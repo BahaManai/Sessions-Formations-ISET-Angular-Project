@@ -1,1 +1,11 @@
-<p>accueil works!</p>
+<h2>Catégories de Formations</h2>
+    @for (category of categories; track $index) {
+      <h3>{{ category }}</h3>
+      <ul>
+        @for (formation of formations; track $index) {
+          @if (formation.categories.includes(category)) {
+            <li>{{ formation.titre }} : {{ formation.description}}</li>
+          }
+        }
+      </ul>
+    }

@@ -32,7 +32,93 @@
           "Informatique",
           "Développement_web"
         ]
-      }],
+      }
+        ,{
+          "id": "3",
+          "titre": "Formation en Mécanique Automobile",
+          "description": "Apprenez les bases de la mécanique automobile pour diagnostiquer et réparer les véhicules.",
+          "chargeHoraire": 30,
+          "programme": "Introduction aux systèmes mécaniques, Maintenance des moteurs, Systèmes de transmission, etc.",
+          "niveau": "débutant",
+          "tags": [
+            "mécanique",
+            "automobile",
+            "réparation"
+          ],
+          "categories": [
+            "Mécanique",
+            "Automobile"
+          ]
+        },
+        {
+          "id": "4",
+          "titre": "Formation en Électricité Industrielle",
+          "description": "Maîtrisez les concepts de base et avancés des installations électriques industrielles.",
+          "chargeHoraire": 25,
+          "programme": "Circuits électriques, Commandes électriques, Maintenance des systèmes, etc.",
+          "niveau": "intermédiaire",
+          "tags": [
+            "électricité",
+            "industriel",
+            "installation"
+          ],
+          "categories": [
+            "Électrique",
+            "Industriel"
+          ]
+        },
+        {
+          "id": "5",
+          "titre": "Formation en Conception de Bâtiments",
+          "description": "Découvrez les bases du génie civil pour concevoir et planifier des projets de construction.",
+          "chargeHoraire": 40,
+          "programme": "Plans architecturaux, Calculs de structure, Gestion de projet, etc.",
+          "niveau": "avancé",
+          "tags": [
+            "génie civil",
+            "construction",
+            "architecture"
+          ],
+          "categories": [
+            "Génie Civil",
+            "Construction"
+          ]
+        },
+        {
+          "id": "6",
+          "titre": "Formation en Sécurité des Réseaux",
+          "description": "Apprenez les principes fondamentaux pour sécuriser des réseaux informatiques.",
+          "chargeHoraire": 20,
+          "programme": "Protocoles de sécurité, Analyse de vulnérabilité, Firewall et VPN, etc.",
+          "niveau": "intermédiaire",
+          "tags": [
+            "réseaux",
+            "sécurité",
+            "informatique"
+          ],
+          "categories": [
+            "Réseaux Informatiques",
+            "Sécurité"
+          ]
+        },
+        {
+          "id": "7",
+          "titre": "Formation en Développement de Systèmes Embarqués",
+          "description": "Maîtrisez les compétences nécessaires pour concevoir et programmer des systèmes embarqués.",
+          "chargeHoraire": 35,
+          "programme": "Introduction aux microcontrôleurs, Programmation C, Conception de systèmes, etc.",
+          "niveau": "avancé",
+          "tags": [
+            "systèmes embarqués",
+            "programmation",
+            "électronique"
+          ],
+          "categories": [
+            "Systèmes Embarqués",
+            "Électronique"
+          ]
+        }
+      ],
     "formateurs": [],
     "sessions": [],
     "candidats": []
