@@ -1,0 +1,40 @@
+{
+    "formations": [{
+        "id": "1",
+        "titre": "Formation Angular",
+        "description": "Apprenez à développer des applications avec Angular",
+        "chargeHoraire": 20,
+        "programme": "Introduction à Angular, Components, Services, etc.",
+        "niveau": "débutant",
+        "tags": [
+          "angular",
+          "web development",
+          "framework"
+        ],
+        "categories": [
+          "Informatique",
+          "Développement_web"
+        ]
+      },
+      {
+        "id": "2",
+        "titre": "Formation React JS",
+        "description": "Apprenez à développer des applications avec React.js",
+        "chargeHoraire": 15,
+        "programme": "Introduction à React, Components, Hooks, etc.",
+        "niveau": "intermédiaire",
+        "tags": [
+          "react",
+          "web development",
+          "framework"
+        ],
+        "categories": [
+          "Informatique",
+          "Développement_web"
+        ]
+      }],
+    "formateurs": [],
+    "sessions": [],
+    "candidats": []
+  }
+  
