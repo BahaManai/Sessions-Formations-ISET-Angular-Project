@@ -1,4 +1,5 @@
-<h2>Catégories de Formations</h2>
+<div class="container mt-3 mb-3">
+  <h2 class="mb-4 text-center">Les formations selon les catégories</h2>
     @for (category of categories; track $index) {
       <h3>{{ category }}</h3>
       <ul>
@@ -9,3 +10,4 @@
         }
       </ul>
     }
+  </div>

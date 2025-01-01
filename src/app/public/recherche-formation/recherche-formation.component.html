@@ -1,1 +1,31 @@
-<p>recherche-formation works!</p>
+<app-search-module (recherche)="getSearch($event)"></app-search-module>
+
+<table class="table table-striped">
+    <thead>
+      <tr class="table-dark">
+        <th scope="col">#</th>
+        <th scope="col">Titre</th>
+        <th scope="col">Description</th>
+        <th scope="col">Charge horaire</th>
+        <th scope="col">Programme</th>
+        <th scope="col">Niveau</th>
+        <th scope="col">Tags</th>
+        <th scope="col">Catégories</th>
+        <th scope="col">Détails</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (formation of filteredFormations(); track $index){
+      <tr>
+        <th scope="row">{{formation.id}}</th>
+        <td>{{formation.titre}}</td>
+        <td>{{formation.description}}</td>
+        <td>{{formation.chargeHoraire}}</td>
+        <td>{{formation.programme}}</td>
+        <td>{{formation.niveau}}</td>
+        <td>{{formation.tags.join(", ")}}</td>
+        <td>{{formation.categories.join(", ")}}</td>
+        <td><a class="btn btn-primary" [routerLink]="[formation.id]">Voir détails</a></td> 
+      </tr>
+      }
+    </tbody></table>
