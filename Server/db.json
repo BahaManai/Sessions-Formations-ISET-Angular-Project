@@ -1,126 +1,184 @@
 {
-    "formations": [{
-        "id": "1",
-        "titre": "Formation Angular",
-        "description": "Apprenez à développer des applications avec Angular",
-        "chargeHoraire": 20,
-        "programme": "Introduction à Angular, Components, Services, etc.",
-        "niveau": "débutant",
-        "tags": [
-          "angular",
-          "web development",
-          "framework"
-        ],
-        "categories": [
-          "Informatique",
-          "Développement_web"
-        ]
-      },
-      {
-        "id": "2",
-        "titre": "Formation React JS",
-        "description": "Apprenez à développer des applications avec React.js",
-        "chargeHoraire": 15,
-        "programme": "Introduction à React, Components, Hooks, etc.",
-        "niveau": "intermédiaire",
-        "tags": [
-          "react",
-          "web development",
-          "framework"
-        ],
-        "categories": [
-          "Informatique",
-          "Développement_web"
-        ]
-      }
-        ,{
-          "id": "3",
-          "titre": "Formation en Mécanique Automobile",
-          "description": "Apprenez les bases de la mécanique automobile pour diagnostiquer et réparer les véhicules.",
-          "chargeHoraire": 30,
-          "programme": "Introduction aux systèmes mécaniques, Maintenance des moteurs, Systèmes de transmission, etc.",
-          "niveau": "débutant",
-          "tags": [
-            "mécanique",
-            "automobile",
-            "réparation"
-          ],
-          "categories": [
-            "Mécanique",
-            "Automobile"
-          ]
-        },
-        {
-          "id": "4",
-          "titre": "Formation en Électricité Industrielle",
-          "description": "Maîtrisez les concepts de base et avancés des installations électriques industrielles.",
-          "chargeHoraire": 25,
-          "programme": "Circuits électriques, Commandes électriques, Maintenance des systèmes, etc.",
-          "niveau": "intermédiaire",
-          "tags": [
-            "électricité",
-            "industriel",
-            "installation"
-          ],
-          "categories": [
-            "Électrique",
-            "Industriel"
-          ]
-        },
-        {
-          "id": "5",
-          "titre": "Formation en Conception de Bâtiments",
-          "description": "Découvrez les bases du génie civil pour concevoir et planifier des projets de construction.",
-          "chargeHoraire": 40,
-          "programme": "Plans architecturaux, Calculs de structure, Gestion de projet, etc.",
-          "niveau": "avancé",
-          "tags": [
-            "génie civil",
-            "construction",
-            "architecture"
-          ],
-          "categories": [
-            "Génie Civil",
-            "Construction"
-          ]
-        },
-        {
-          "id": "6",
-          "titre": "Formation en Sécurité des Réseaux",
-          "description": "Apprenez les principes fondamentaux pour sécuriser des réseaux informatiques.",
-          "chargeHoraire": 20,
-          "programme": "Protocoles de sécurité, Analyse de vulnérabilité, Firewall et VPN, etc.",
-          "niveau": "intermédiaire",
-          "tags": [
-            "réseaux",
-            "sécurité",
-            "informatique"
-          ],
-          "categories": [
-            "Réseaux Informatiques",
-            "Sécurité"
-          ]
-        },
-        {
-          "id": "7",
-          "titre": "Formation en Développement de Systèmes Embarqués",
-          "description": "Maîtrisez les compétences nécessaires pour concevoir et programmer des systèmes embarqués.",
-          "chargeHoraire": 35,
-          "programme": "Introduction aux microcontrôleurs, Programmation C, Conception de systèmes, etc.",
-          "niveau": "avancé",
-          "tags": [
-            "systèmes embarqués",
-            "programmation",
-            "électronique"
-          ],
-          "categories": [
-            "Systèmes Embarqués",
-            "Électronique"
-          ]
-        }
-      ],
-    "formateurs": [],
-    "sessions": [],
-    "candidats": []
-  }
-  
+  "formations": [
+    {
+      "id": "1",
+      "titre": "Formation Angular",
+      "description": "Apprenez à développer des applications avec Angular",
+      "chargeHoraire": 20,
+      "programme": "https://example.com/programmes/angular.pdf",
+      "niveau": "débutant",
+      "tags": ["angular", "web development", "framework"],
+      "categories": ["Informatique", "Développement_web"]
+    },
+    {
+      "id": "2",
+      "titre": "Formation React JS",
+      "description": "Apprenez à développer des applications avec React.js",
+      "chargeHoraire": 15,
+      "programme": "https://example.com/programmes/react.pdf",
+      "niveau": "intermédiaire",
+      "tags": ["react", "web development", "framework"],
+      "categories": ["Informatique", "Développement_web"]
+    },
+    {
+      "id": "3",
+      "titre": "Formation en Mécanique Automobile",
+      "description": "Apprenez les bases de la mécanique automobile pour diagnostiquer et réparer les véhicules.",
+      "chargeHoraire": 30,
+      "programme": "https://example.com/programmes/mecanique.pdf",
+      "niveau": "débutant",
+      "tags": ["mécanique", "automobile", "réparation"],
+      "categories": ["Mécanique", "Automobile"]
+    },
+    {
+      "id": "4",
+      "titre": "Formation en Électricité Industrielle",
+      "description": "Maîtrisez les concepts de base et avancés des installations électriques industrielles.",
+      "chargeHoraire": 25,
+      "programme": "https://example.com/programmes/electricite.pdf",
+      "niveau": "intermédiaire",
+      "tags": ["électricité", "industriel", "installation"],
+      "categories": ["Électrique", "Industriel"]
+    },
+    {
+      "id": "5",
+      "titre": "Formation en Conception de Bâtiments",
+      "description": "Découvrez les bases du génie civil pour concevoir et planifier des projets de construction.",
+      "chargeHoraire": 40,
+      "programme": "https://example.com/programmes/batiments.pdf",
+      "niveau": "avancé",
+      "tags": ["génie civil", "construction", "architecture"],
+      "categories": ["Génie Civil", "Construction"]
+    },
+    {
+      "id": "6",
+      "titre": "Formation en Sécurité des Réseaux",
+      "description": "Apprenez les principes fondamentaux pour sécuriser des réseaux informatiques.",
+      "chargeHoraire": 20,
+      "programme": "https://example.com/programmes/reseaux.pdf",
+      "niveau": "intermédiaire",
+      "tags": ["réseaux", "sécurité", "informatique"],
+      "categories": ["Réseaux Informatiques", "Sécurité"]
+    },
+    {
+      "id": "7",
+      "titre": "Formation en Développement de Systèmes Embarqués",
+      "description": "Maîtrisez les compétences nécessaires pour concevoir et programmer des systèmes embarqués.",
+      "chargeHoraire": 35,
+      "programme": "https://example.com/programmes/embarques.pdf",
+      "niveau": "avancé",
+      "tags": ["systèmes embarqués", "programmation", "électronique"],
+      "categories": ["Systèmes Embarqués", "Électronique"]
+    }
+  ],
+  "formateurs": [
+    {
+      "id": "F1",
+      "nom": "Doe",
+      "prenom": "John",
+      "email": "johndoe@example.com",
+      "telephone": 12345678,
+      "numCIN": 11111111,
+      "photo": "https://example.com/photos/johndoe.jpg",
+      "cv": "https://example.com/cvs/johndoe.pdf",
+      "specialites": ["Angular", "React"]
+    },
+    {
+      "id": "F2",
+      "nom": "Smith",
+      "prenom": "Jane",
+      "email": "janesmith@example.com",
+      "telephone": 87654321,
+      "numCIN": 22222222,
+      "photo": "https://example.com/photos/janesmith.jpg",
+      "cv": "https://example.com/cvs/janesmith.pdf",
+      "specialites": ["Mécanique", "Électricité Industrielle"]
+    },
+    {
+      "id": "F3",
+      "nom": "Brown",
+      "prenom": "Charlie",
+      "email": "charliebrown@example.com",
+      "telephone": 12348765,
+      "numCIN": 33333333,
+      "photo": "https://example.com/photos/charliebrown.jpg",
+      "cv": "https://example.com/cvs/charliebrown.pdf",
+      "specialites": ["Génie Civil", "Systèmes Embarqués"]
+    }
+  ],
+  "sessions": [
+    {
+      "id": "S1",
+      "formationId": "1",
+      "formateurs": ["F1"],
+      "dateDeb": "2024-03-01",
+      "dateFin": "2024-03-05",
+      "description": "Session de formation Angular pour débutants."
+    },
+    {
+      "id": "S2",
+      "formationId": "2",
+      "formateurs": ["F1"],
+      "dateDeb": "2025-06-01",
+      "dateFin": "2025-06-05",
+      "description": "Session avancée pour maîtriser React."
+    },
+    {
+      "id": "S3",
+      "formationId": "3",
+      "formateurs": ["F2"],
+      "dateDeb": "2025-09-10",
+      "dateFin": "2025-09-20",
+      "description": "Introduction à la mécanique automobile."
+    },
+    {
+      "id": "S4",
+      "formationId": "4",
+      "formateurs": ["F2"],
+      "dateDeb": "2024-11-15",
+      "dateFin": "2024-11-20",
+      "description": "Formation en électricité industrielle pour intermédiaires."
+    },
+    {
+      "id": "S5",
+      "formationId": "5",
+      "formateurs": ["F3"],
+      "dateDeb": "2025-02-01",
+      "dateFin": "2025-02-10",
+      "description": "Conception avancée de bâtiments."
+    },
+    {
+      "id": "S6",
+      "formationId": "1",
+      "formateurs": ["F1"],
+      "dateDeb": "2025-07-15",
+      "dateFin": "2025-07-20",
+      "description": "Session d'été pour les débutants en Angular."
+    },
+    {
+      "id": "S7",
+      "formationId": "1",
+      "formateurs": ["F1"],
+      "dateDeb": "2024-09-01",
+      "dateFin": "2024-09-05",
+      "description": "Session rapide sur Angular pour débutants."
+    },
+    {
+      "id": "S8",
+      "formationId": "2",
+      "formateurs": ["F1"],
+      "dateDeb": "2025-10-01",
+      "dateFin": "2025-10-07",
+      "description": "Session avancée sur React JS pour intermédiaires."
+    },
+    {
+      "id": "S9",
+      "formationId": "2",
+      "formateurs": ["F1"],
+      "dateDeb": "2024-05-10",
+      "dateFin": "2024-05-15",
+      "description": "Introduction rapide à React JS pour développeurs."
+    }    
+  ],
+  "candidats": []
+}

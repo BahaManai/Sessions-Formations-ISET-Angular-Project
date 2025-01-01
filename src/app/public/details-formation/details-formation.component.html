@@ -1,1 +1,31 @@
-<p>details-formation works!</p>
+<div class="container mt-4">
+    <div class="card shadow-lg">
+      <div class="card-body">
+        <h2 class="card-title text-center text-primary">{{ formation.titre }}</h2>
+        <p class="card-text mt-3">
+          <strong>Description : </strong> {{ formation.description }}
+        </p>
+        <p class="card-text"> 
+          <strong>Charge horaire : </strong> {{ formation.chargeHoraire }} heures
+        </p>
+      </div>
+    </div>
+    <div class="mt-4">
+      <h3>Sessions disponibles</h3>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let session of sessions">
+          <strong>ID Formateurs : </strong> {{ session.formateurs.join(', ') }}
+          <br />
+          <strong>Date de début : </strong> {{ session.dateDeb | date:'dd/MM/yyyy' }}
+          <br />
+          <strong>Date de fin : </strong> {{ session.dateFin | date:'dd/MM/yyyy' }}
+        </li>
+      </ul>
+    </div>
+    <div class="text-center mt-4">
+      <a class="btn btn-primary" [href]="formation.programme" target="_blank">
+        Voir le programme
+      </a>
+    </div>
+  </div>
+  
