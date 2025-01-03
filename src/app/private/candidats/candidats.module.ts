@@ -6,6 +6,7 @@ import { CandidatsRoutingModule } from './candidats-routing.module';
 import { AddCandidatComponent } from './add-candidat/add-candidat.component';
 import { EditCandidatComponent } from './edit-candidat/edit-candidat.component';
 import { ListCandidatComponent } from './list-candidat/list-candidat.component';
+import { NavBarComponent } from "../nav-bar/nav-bar.component";
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ListCandidatComponent } from './list-candidat/list-candidat.component';
   imports: [
     CommonModule,
     CandidatsRoutingModule,
-    FormsModule
-  ]
+    FormsModule,
+    NavBarComponent
+]
 })
 export class CandidatsModule { }

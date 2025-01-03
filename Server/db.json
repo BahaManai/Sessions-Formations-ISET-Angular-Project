@@ -118,6 +118,25 @@
         "Systèmes Embarqués",
         "Électronique"
       ]
+    },
+    {
+      "id": "3900",
+      "titre": "Formation sur Ruby on Rails",
+      "description": "Découvrez les bases du framework backend Ruby on Rails",
+      "chargeHoraire": 50,
+      "programme": "https://example.com/programmes/ror.pdf",
+      "niveau": "intermédiare",
+      "tags": [
+        "Ruby",
+        "Ruby on Rails",
+        "framework",
+        "développement web"
+      ],
+      "categories": [
+        "Développement_web",
+        "Informatique",
+        "Backend"
+      ]
     }
   ],
   "formateurs": [
@@ -295,13 +314,13 @@
       "motDePasse": "motdepasse123"
     },
     {
-      "id": "C5",
       "nom": "Lemoine",
       "prenom": "Luc",
       "email": "luc.lemoine@example.com",
-      "numCIN": 33445566,
-      "photo": "https://example.com/photos/luc.jpg",
-      "motDePasse": "motdepasse123"
+      "numCIN": 3344556,
+      "photo": "C:\\fakepath\\456280541_923529016486136_3834254744458072504_n.jpg",
+      "motDePasse": "motdepasse123",
+      "id": "C5"
     },
     {
       "id": "C6",

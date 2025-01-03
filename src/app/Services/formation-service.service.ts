@@ -24,7 +24,23 @@ export class FormationServiceService {
   getFormationById(id: string) : Observable<Formation>{
     return this.httpClient.get<Formation>(this.baseURL+"/"+id);
   }
-  addFormation(body: any) {
-    return this.httpClient.post(`${this.baseURL}`, body);
+  addFormation(titre: string, description: string, chargeHoraire: number, programme: string, niveau: string, tags: string[], categories: string[]): Observable<Formation> {
+    return this.httpClient.post<Formation>(
+      this.baseURL,
+      JSON.stringify({
+        titre: titre,
+        description: description,
+        chargeHoraire: chargeHoraire,
+        programme: programme,
+        niveau: niveau,
+        tags: tags,
+        categories: categories
+      }),
+      this.options
+    );
+  }
+  
+  deleteFormation(id : string):Observable<Formation>{
+        return this.httpClient.delete<Formation>(this.baseURL+"/"+id)
   }
 }

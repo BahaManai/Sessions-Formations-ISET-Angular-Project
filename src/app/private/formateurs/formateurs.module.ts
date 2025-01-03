@@ -6,6 +6,7 @@ import { FormateursRoutingModule } from './formateurs-routing.module';
 import { AddFormateurComponent } from './add-formateur/add-formateur.component';
 import { EditFormateurComponent } from './edit-formateur/edit-formateur.component';
 import { ListFormateurComponent } from './list-formateur/list-formateur.component';
+import { NavBarComponent } from "../nav-bar/nav-bar.component";
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ListFormateurComponent } from './list-formateur/list-formateur.componen
   imports: [
     CommonModule,
     FormateursRoutingModule,
-    FormsModule
-  ]
+    FormsModule,
+    NavBarComponent
+]
 })
 export class FormateursModule { }

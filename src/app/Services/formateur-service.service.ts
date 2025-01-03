@@ -43,4 +43,21 @@ export class FormateurServiceService {
       this.options
     );
   }
+  editFormateur(formateur: Formateur): Observable<Formateur> {
+    return this.httpClient.put<Formateur>(
+      this.baseURL + "/" + formateur.id,
+      JSON.stringify({
+        nom: formateur.nom,
+        prenom: formateur.prenom,
+        email: formateur.email,
+        telephone: formateur.telephone,
+        numCIN: formateur.numCIN,
+        photo: formateur.photo,
+        cv: formateur.cv,
+        specialites: formateur.specialites
+      }),
+      this.options
+    );
+  }
+  
 }

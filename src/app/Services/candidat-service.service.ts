@@ -41,4 +41,19 @@ export class CandidatServiceService {
       this.options
     );
   }
+  editCandidat(candidat: Candidat): Observable<Candidat> {
+    return this.httpClient.put<Candidat>(
+      this.baseURL + "/" + candidat.id,
+      JSON.stringify({
+        nom: candidat.nom,
+        prenom: candidat.prenom,
+        email: candidat.email,
+        numCIN: candidat.numCIN,
+        photo: candidat.photo,
+        motDePasse: candidat.motDePasse
+      }),
+      this.options
+    );
+  }
+  
 }

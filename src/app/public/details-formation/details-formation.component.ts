@@ -43,17 +43,7 @@ export class DetailsFormationComponent implements OnInit {
     });
   }
 
-  private getNomsFormateurs(formateurs: string[]): string {
-    let noms: string[] = [];
-
-    formateurs.forEach((formateurId) => {
-      this.formateurService.getFormateurById(formateurId).subscribe((formateur) => {
-        noms.push(formateur.nom);
-      });
-    });
-
-    return noms.join(", ");
-  }
+  
 
   /* openInscriptionModal(session: Session): void {
     if (session.candidats.length < 15) {

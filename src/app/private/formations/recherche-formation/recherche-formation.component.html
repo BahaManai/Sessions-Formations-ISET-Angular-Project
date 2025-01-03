@@ -1,5 +1,5 @@
 <app-nav-bar></app-nav-bar>
-<app-search-module (recherche)="getSearch($event)"></app-search-module>
+<button routerLink="/admin-space/addformation" class="btn btn-success mb-3">Ajouter une formation</button>
 
 <table class="table table-striped">
     <thead>
@@ -12,7 +12,9 @@
         <th scope="col">Niveau</th>
         <th scope="col">Tags</th>
         <th scope="col">Catégories</th>
-        <th scope="col">Détails</th>
+        <th scope="col">Editer</th>
+        <th scope="col">Supprimer</th>
+        <th scope="col">Sessions</th>
       </tr>
     </thead>
     <tbody>
@@ -26,7 +28,9 @@
         <td>{{formation.niveau}}</td>
         <td>{{formation.tags.join(", ")}}</td>
         <td>{{formation.categories.join(", ")}}</td>
-        <td><a class="btn btn-primary" [routerLink]="[formation.id]">Voir détails</a></td> 
+        <td><a class="btn btn-primary" [routerLink]="['/admin-space/formations', 'edit', formation.id]">Editer</a></td>
+        <td><button class="btn btn-danger" (click)="deleteFormation(formation.id)">Supprimer</button></td>
+        <td><a class="btn btn-success" [routerLink]="[formation.id]">Modifier Sessions</a></td> 
       </tr>
       }
     </tbody></table>
