@@ -43,4 +43,20 @@ export class FormationServiceService {
   deleteFormation(id : string):Observable<Formation>{
         return this.httpClient.delete<Formation>(this.baseURL+"/"+id)
   }
+  editFormation(formation: Formation): Observable<Formation> {
+    return this.httpClient.put<Formation>(
+      this.baseURL + "/" + formation.id,
+      JSON.stringify({
+        titre: formation.titre,
+        description: formation.description,
+        chargeHoraire: formation.chargeHoraire,
+        programme: formation.programme,
+        niveau: formation.niveau,
+        tags: formation.tags,
+        categories: formation.categories
+      }),
+      this.options
+    );
+  }
+  
 }

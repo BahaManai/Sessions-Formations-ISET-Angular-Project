@@ -12,14 +12,6 @@ export class RechercheFormationComponent {
   recherche ="";
   constructor(private formationService: FormationServiceService){}
 
-  getSearch(event: string){
-    this.recherche = event;
-  }
-  filteredFormations() {
-    return this.formations?.filter(formation =>
-      formation.tags.join(" ").toLowerCase().includes(this.recherche.toLowerCase())
-    );
-  }
   ngOnInit(): void {
       this.formationService.getFormations().subscribe(
         formations => this.formations = formations

@@ -1,7 +1,6 @@
 {
   "formations": [
     {
-      "id": "1",
       "titre": "Formation Angular",
       "description": "Apprenez à développer des applications avec Angular",
       "chargeHoraire": 20,
@@ -10,12 +9,13 @@
       "tags": [
         "angular",
         "web development",
-        "framework"
+        "frameworks"
       ],
       "categories": [
-        "Informatique",
+        "Informatiques",
         "Développement_web"
-      ]
+      ],
+      "id": "1"
     },
     {
       "id": "2",
@@ -32,40 +32,6 @@
       "categories": [
         "Informatique",
         "Développement_web"
-      ]
-    },
-    {
-      "id": "3",
-      "titre": "Formation en Mécanique Automobile",
-      "description": "Apprenez les bases de la mécanique automobile pour diagnostiquer et réparer les véhicules.",
-      "chargeHoraire": 30,
-      "programme": "https://example.com/programmes/mecanique.pdf",
-      "niveau": "débutant",
-      "tags": [
-        "mécanique",
-        "automobile",
-        "réparation"
-      ],
-      "categories": [
-        "Mécanique",
-        "Automobile"
-      ]
-    },
-    {
-      "id": "4",
-      "titre": "Formation en Électricité Industrielle",
-      "description": "Maîtrisez les concepts de base et avancés des installations électriques industrielles.",
-      "chargeHoraire": 25,
-      "programme": "https://example.com/programmes/electricite.pdf",
-      "niveau": "intermédiaire",
-      "tags": [
-        "électricité",
-        "industriel",
-        "installation"
-      ],
-      "categories": [
-        "Électrique",
-        "Industriel"
       ]
     },
     {
@@ -86,7 +52,6 @@
       ]
     },
     {
-      "id": "6",
       "titre": "Formation en Sécurité des Réseaux",
       "description": "Apprenez les principes fondamentaux pour sécuriser des réseaux informatiques.",
       "chargeHoraire": 20,
@@ -95,12 +60,13 @@
       "tags": [
         "réseaux",
         "sécurité",
-        "informatique"
+        "informatiques"
       ],
       "categories": [
         "Réseaux Informatiques",
         "Sécurité"
-      ]
+      ],
+      "id": "6"
     },
     {
       "id": "7",
@@ -120,7 +86,6 @@
       ]
     },
     {
-      "id": "3900",
       "titre": "Formation sur Ruby on Rails",
       "description": "Découvrez les bases du framework backend Ruby on Rails",
       "chargeHoraire": 50,
@@ -133,10 +98,10 @@
         "développement web"
       ],
       "categories": [
-        "Développement_web",
         "Informatique",
-        "Backend"
-      ]
+        "Développement_web"
+      ],
+      "id": "3900"
     }
   ],
   "formateurs": [
@@ -207,7 +172,7 @@
     },
     {
       "id": "S3",
-      "formationId": "3",
+      "formationId": null,
       "formateurs": [
         "F2"
       ],
@@ -217,7 +182,7 @@
     },
     {
       "id": "S4",
-      "formationId": "4",
+      "formationId": null,
       "formateurs": [
         "F2"
       ],
