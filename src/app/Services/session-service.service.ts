@@ -28,5 +28,8 @@ export class SessionServiceService {
     const url = this.baseURL + "?formationId=" + formationId;
     return this.httpClient.get<Session[]>(url, this.options);
   }
+  updateSession(session: Session): Observable<Session> {
+    return this.httpClient.put<Session>(this.baseURL+"/"+session.id, session, this.options);
+  }
   
 }

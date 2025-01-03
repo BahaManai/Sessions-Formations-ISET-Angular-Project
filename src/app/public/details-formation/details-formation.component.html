@@ -13,13 +13,27 @@
     <div class="mt-4">
       <h3>Sessions disponibles</h3>
       <ul class="list-group">
-        <li class="list-group-item" *ngFor="let session of sessions">
-          <strong>ID Formateurs : </strong> {{ session.formateurs.join(', ') }}
+        @for (session of sessions; track $index){
+        <li class="list-group-item">
+          <strong>ID Formateurs : </strong> {{ session.formateurs.join(", ") }}
           <br />
           <strong>Date de début : </strong> {{ session.dateDeb | date:'dd/MM/yyyy' }}
           <br />
           <strong>Date de fin : </strong> {{ session.dateFin | date:'dd/MM/yyyy' }}
+          <br />
+          <!-- <button *ngIf="session.candidats.length < 15" 
+                class="btn btn-success" 
+                (click)="openInscriptionModal(session)">
+          S'inscrire
+        </button>
+        <button *ngIf="session.candidats.length >= 15" 
+                class="btn btn-secondary" 
+                disabled>
+          Session complète
+        </button> -->
+
         </li>
+        <!--}-->}
       </ul>
     </div>
     <div class="text-center mt-4">

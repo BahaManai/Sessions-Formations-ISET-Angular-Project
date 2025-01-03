@@ -24,4 +24,7 @@ export class FormationServiceService {
   getFormationById(id: string) : Observable<Formation>{
     return this.httpClient.get<Formation>(this.baseURL+"/"+id);
   }
+  addFormation(body: any) {
+    return this.httpClient.post(`${this.baseURL}`, body);
+  }
 }

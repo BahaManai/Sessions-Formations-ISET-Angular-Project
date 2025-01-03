@@ -7,8 +7,15 @@
       "chargeHoraire": 20,
       "programme": "https://example.com/programmes/angular.pdf",
       "niveau": "débutant",
-      "tags": ["angular", "web development", "framework"],
-      "categories": ["Informatique", "Développement_web"]
+      "tags": [
+        "angular",
+        "web development",
+        "framework"
+      ],
+      "categories": [
+        "Informatique",
+        "Développement_web"
+      ]
     },
     {
       "id": "2",
@@ -17,8 +24,15 @@
       "chargeHoraire": 15,
       "programme": "https://example.com/programmes/react.pdf",
       "niveau": "intermédiaire",
-      "tags": ["react", "web development", "framework"],
-      "categories": ["Informatique", "Développement_web"]
+      "tags": [
+        "react",
+        "web development",
+        "framework"
+      ],
+      "categories": [
+        "Informatique",
+        "Développement_web"
+      ]
     },
     {
       "id": "3",
@@ -27,8 +41,15 @@
       "chargeHoraire": 30,
       "programme": "https://example.com/programmes/mecanique.pdf",
       "niveau": "débutant",
-      "tags": ["mécanique", "automobile", "réparation"],
-      "categories": ["Mécanique", "Automobile"]
+      "tags": [
+        "mécanique",
+        "automobile",
+        "réparation"
+      ],
+      "categories": [
+        "Mécanique",
+        "Automobile"
+      ]
     },
     {
       "id": "4",
@@ -37,8 +58,15 @@
       "chargeHoraire": 25,
       "programme": "https://example.com/programmes/electricite.pdf",
       "niveau": "intermédiaire",
-      "tags": ["électricité", "industriel", "installation"],
-      "categories": ["Électrique", "Industriel"]
+      "tags": [
+        "électricité",
+        "industriel",
+        "installation"
+      ],
+      "categories": [
+        "Électrique",
+        "Industriel"
+      ]
     },
     {
       "id": "5",
@@ -47,8 +75,15 @@
       "chargeHoraire": 40,
       "programme": "https://example.com/programmes/batiments.pdf",
       "niveau": "avancé",
-      "tags": ["génie civil", "construction", "architecture"],
-      "categories": ["Génie Civil", "Construction"]
+      "tags": [
+        "génie civil",
+        "construction",
+        "architecture"
+      ],
+      "categories": [
+        "Génie Civil",
+        "Construction"
+      ]
     },
     {
       "id": "6",
@@ -57,8 +92,15 @@
       "chargeHoraire": 20,
       "programme": "https://example.com/programmes/reseaux.pdf",
       "niveau": "intermédiaire",
-      "tags": ["réseaux", "sécurité", "informatique"],
-      "categories": ["Réseaux Informatiques", "Sécurité"]
+      "tags": [
+        "réseaux",
+        "sécurité",
+        "informatique"
+      ],
+      "categories": [
+        "Réseaux Informatiques",
+        "Sécurité"
+      ]
     },
     {
       "id": "7",
@@ -67,8 +109,15 @@
       "chargeHoraire": 35,
       "programme": "https://example.com/programmes/embarques.pdf",
       "niveau": "avancé",
-      "tags": ["systèmes embarqués", "programmation", "électronique"],
-      "categories": ["Systèmes Embarqués", "Électronique"]
+      "tags": [
+        "systèmes embarqués",
+        "programmation",
+        "électronique"
+      ],
+      "categories": [
+        "Systèmes Embarqués",
+        "Électronique"
+      ]
     }
   ],
   "formateurs": [
@@ -81,7 +130,10 @@
       "numCIN": 11111111,
       "photo": "https://example.com/photos/johndoe.jpg",
       "cv": "https://example.com/cvs/johndoe.pdf",
-      "specialites": ["Angular", "React"]
+      "specialites": [
+        "Angular",
+        "React"
+      ]
     },
     {
       "id": "F2",
@@ -92,7 +144,10 @@
       "numCIN": 22222222,
       "photo": "https://example.com/photos/janesmith.jpg",
       "cv": "https://example.com/cvs/janesmith.pdf",
-      "specialites": ["Mécanique", "Électricité Industrielle"]
+      "specialites": [
+        "Mécanique",
+        "Électricité Industrielle"
+      ]
     },
     {
       "id": "F3",
@@ -103,14 +158,19 @@
       "numCIN": 33333333,
       "photo": "https://example.com/photos/charliebrown.jpg",
       "cv": "https://example.com/cvs/charliebrown.pdf",
-      "specialites": ["Génie Civil", "Systèmes Embarqués"]
+      "specialites": [
+        "Génie Civil",
+        "Systèmes Embarqués"
+      ]
     }
   ],
   "sessions": [
     {
       "id": "S1",
       "formationId": "1",
-      "formateurs": ["F1"],
+      "formateurs": [
+        "F1"
+      ],
       "dateDeb": "2024-03-01",
       "dateFin": "2024-03-05",
       "description": "Session de formation Angular pour débutants."
@@ -118,7 +178,10 @@
     {
       "id": "S2",
       "formationId": "2",
-      "formateurs": ["F1"],
+      "formateurs": [
+        "F1",
+        "F2"
+      ],
       "dateDeb": "2025-06-01",
       "dateFin": "2025-06-05",
       "description": "Session avancée pour maîtriser React."
@@ -126,7 +189,9 @@
     {
       "id": "S3",
       "formationId": "3",
-      "formateurs": ["F2"],
+      "formateurs": [
+        "F2"
+      ],
       "dateDeb": "2025-09-10",
       "dateFin": "2025-09-20",
       "description": "Introduction à la mécanique automobile."
@@ -134,7 +199,9 @@
     {
       "id": "S4",
       "formationId": "4",
-      "formateurs": ["F2"],
+      "formateurs": [
+        "F2"
+      ],
       "dateDeb": "2024-11-15",
       "dateFin": "2024-11-20",
       "description": "Formation en électricité industrielle pour intermédiaires."
@@ -142,7 +209,9 @@
     {
       "id": "S5",
       "formationId": "5",
-      "formateurs": ["F3"],
+      "formateurs": [
+        "F3"
+      ],
       "dateDeb": "2025-02-01",
       "dateFin": "2025-02-10",
       "description": "Conception avancée de bâtiments."
@@ -150,7 +219,9 @@
     {
       "id": "S6",
       "formationId": "1",
-      "formateurs": ["F1"],
+      "formateurs": [
+        "F1"
+      ],
       "dateDeb": "2025-07-15",
       "dateFin": "2025-07-20",
       "description": "Session d'été pour les débutants en Angular."
@@ -158,7 +229,9 @@
     {
       "id": "S7",
       "formationId": "1",
-      "formateurs": ["F1"],
+      "formateurs": [
+        "F1"
+      ],
       "dateDeb": "2024-09-01",
       "dateFin": "2024-09-05",
       "description": "Session rapide sur Angular pour débutants."
@@ -166,7 +239,9 @@
     {
       "id": "S8",
       "formationId": "2",
-      "formateurs": ["F1"],
+      "formateurs": [
+        "F1"
+      ],
       "dateDeb": "2025-10-01",
       "dateFin": "2025-10-07",
       "description": "Session avancée sur React JS pour intermédiaires."
@@ -174,11 +249,95 @@
     {
       "id": "S9",
       "formationId": "2",
-      "formateurs": ["F1"],
+      "formateurs": [
+        "F1"
+      ],
       "dateDeb": "2024-05-10",
       "dateFin": "2024-05-15",
       "description": "Introduction rapide à React JS pour développeurs."
-    }    
+    }
   ],
-  "candidats": []
+  "candidats": [
+    {
+      "id": "C1",
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "email": "jean.dupont@example.com",
+      "numCIN": 12345678,
+      "photo": "https://example.com/photos/jean.jpg",
+      "motDePasse": "motdepasse123"
+    },
+    {
+      "id": "C2",
+      "nom": "Martin",
+      "prenom": "Claire",
+      "email": "claire.martin@example.com",
+      "numCIN": 87654321,
+      "photo": "https://example.com/photos/claire.jpg",
+      "motDePasse": "motdepasse123"
+    },
+    {
+      "id": "C3",
+      "nom": "Durand",
+      "prenom": "Paul",
+      "email": "paul.durand@example.com",
+      "numCIN": 11223344,
+      "photo": "https://example.com/photos/paul.jpg",
+      "motDePasse": "motdepasse123"
+    },
+    {
+      "id": "C4",
+      "nom": "Petit",
+      "prenom": "Marie",
+      "email": "marie.petit@example.com",
+      "numCIN": 55667788,
+      "photo": "https://example.com/photos/marie.jpg",
+      "motDePasse": "motdepasse123"
+    },
+    {
+      "id": "C5",
+      "nom": "Lemoine",
+      "prenom": "Luc",
+      "email": "luc.lemoine@example.com",
+      "numCIN": 33445566,
+      "photo": "https://example.com/photos/luc.jpg",
+      "motDePasse": "motdepasse123"
+    },
+    {
+      "id": "C6",
+      "nom": "Moreau",
+      "prenom": "Sophie",
+      "email": "sophie.moreau@example.com",
+      "numCIN": 77889900,
+      "photo": "https://example.com/photos/sophie.jpg",
+      "motDePasse": "motdepasse123"
+    },
+    {
+      "id": "C7",
+      "nom": "Roux",
+      "prenom": "Hugo",
+      "email": "hugo.roux@example.com",
+      "numCIN": 99001122,
+      "photo": "https://example.com/photos/hugo.jpg",
+      "motDePasse": "motdepasse123"
+    },
+    {
+      "id": "C8",
+      "nom": "Blanc",
+      "prenom": "Camille",
+      "email": "camille.blanc@example.com",
+      "numCIN": 44556677,
+      "photo": "https://example.com/photos/camille.jpg",
+      "motDePasse": "motdepasse123"
+    },
+    {
+      "id": "C9",
+      "nom": "Fabre",
+      "prenom": "Thomas",
+      "email": "thomas.fabre@example.com",
+      "numCIN": 22334455,
+      "photo": "https://example.com/photos/thomas.jpg",
+      "motDePasse": "motdepasse123"
+    }
+  ]
 }
