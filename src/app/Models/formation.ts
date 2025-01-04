@@ -11,10 +11,10 @@ export class Formation {
     public set tags(value: string[]) {
         this._tags = value;
     }
-    public get niveau(): "débutant" | "intermédiare" | "avancé" {
+    public get niveau(): "débutant" | "intermédiaire" | "avancé" {
         return this._niveau;
     }
-    public set niveau(value: "débutant" | "intermédiare" | "avancé") {
+    public set niveau(value: "débutant" | "intermédiaire" | "avancé") {
         this._niveau = value;
     }
     public get programme(): string {
@@ -53,7 +53,7 @@ export class Formation {
       private _description: string,
       private _chargeHoraire: number, // nombre d'heures pour terminer la formation
       private _programme: string, // lien pdf
-      private _niveau: "débutant" | "intermédiare" | "avancé",
+      private _niveau: "débutant" | "intermédiaire" | "avancé",
       private _tags: string[],
       private _categories: string[]
     ) {}

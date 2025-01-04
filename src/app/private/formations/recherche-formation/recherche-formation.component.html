@@ -8,7 +8,7 @@
         <th scope="col">Titre</th>
         <th scope="col">Description</th>
         <th scope="col">Charge horaire</th>
-        <th scope="col">Programme</th>
+        <th scope="col">Lien du programme</th>
         <th scope="col">Niveau</th>
         <th scope="col">Tags</th>
         <th scope="col">Catégories</th>
@@ -20,12 +20,19 @@
     <tbody>
       @for (formation of formations; track $index){
       <tr>
-        <th scope="row">{{formation.id}}</th>
-        <td>{{formation.titre}}</td>
+        <td scope="row">{{formation.id}}</td>
+        <td><strong>{{formation.titre}}</strong></td>
         <td>{{formation.description}}</td>
         <td>{{formation.chargeHoraire}}</td>
         <td>{{formation.programme}}</td>
-        <td>{{formation.niveau}}</td>
+        <td><span 
+          [ngClass]="{
+            'niveau-debutant': formation.niveau === 'débutant',
+            'niveau-intermediaire': formation.niveau === 'intermédiaire',
+            'niveau-avance': formation.niveau === 'avancé'
+          }">
+          {{formation.niveau}}
+        </span></td>
         <td>{{formation.tags.join(", ")}}</td>
         <td>{{formation.categories.join(", ")}}</td>
         <td><a class="btn btn-primary" [routerLink]="['/admin-space/formations', 'edit', formation.id]">Editer</a></td>

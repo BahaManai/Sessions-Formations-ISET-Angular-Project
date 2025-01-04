@@ -1,0 +1,21 @@
+.niveau-debutant {
+    background-color: #e4ffe1; /* Vert clair */
+    color: #3c763d; /* Couleur du texte */
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  
+  .niveau-intermediaire {
+    background-color: #fff3cd; /* Jaune clair */
+    color: #856404; /* Couleur du texte */
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  
+  .niveau-avance {
+    background-color: #f8d7da; /* Rouge clair */
+    color: #721c24; /* Couleur du texte */
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  

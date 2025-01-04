@@ -12,7 +12,7 @@
         "frameworks"
       ],
       "categories": [
-        "Informatiques",
+        "Informatique",
         "Développement_web"
       ],
       "id": "1"
@@ -90,7 +90,7 @@
       "description": "Découvrez les bases du framework backend Ruby on Rails",
       "chargeHoraire": 50,
       "programme": "https://example.com/programmes/ror.pdf",
-      "niveau": "intermédiare",
+      "niveau": "intermédiaire",
       "tags": [
         "Ruby",
         "Ruby on Rails",
@@ -247,6 +247,63 @@
       "numCIN": 22334455,
       "photo": "https://example.com/photos/thomas.jpg",
       "motDePasse": "motdepasse123"
+    },
+    {
+      "id": "254a",
+      "nom": "Manai",
+      "prenom": "Baha Eddine",
+      "email": "bahaeddinmanai7@gmail.com",
+      "numCIN": 5555555,
+      "photo": "C:\\fakepath\\1-removebg-preview.png"
+    },
+    {
+      "id": "6bf1",
+      "nom": "Manai",
+      "prenom": "Baha Eddine",
+      "email": "mannaibahaeddine@rades.r-iset.tn",
+      "numCIN": 54525528228
+    },
+    {
+      "id": "38a9",
+      "nom": "Manai",
+      "prenom": "Baha Eddine",
+      "email": "mannaibahaeddine@rades.r-iset.tn",
+      "numCIN": 7676776
+    },
+    {
+      "id": "5394",
+      "nom": "Manai",
+      "prenom": "Baha Eddine",
+      "email": "bahaeddinmanai7@gmail.com",
+      "numCIN": 7432857
+    },
+    {
+      "id": "5619",
+      "nom": "Manai",
+      "prenom": "Baha Eddine",
+      "email": "mannaibahaeddine@rades.r-iset.tn",
+      "numCIN": 27827237278
+    },
+    {
+      "id": "7d3b",
+      "nom": "Manai",
+      "prenom": "Baha Eddine",
+      "email": "bahaeddinmanai7@gmail.com",
+      "numCIN": 78578575
+    },
+    {
+      "id": "9a8c",
+      "nom": "Manai",
+      "prenom": "Baha Eddine",
+      "email": "Ahmed.karim@gmail.com",
+      "numCIN": 424343434
+    },
+    {
+      "id": "b8ac",
+      "nom": "Manai",
+      "prenom": "Baha Eddine",
+      "email": "bahaeddinmanai7@gmail.com",
+      "numCIN": 7527527
     }
   ],
   "sessions": [
@@ -290,7 +347,10 @@
       "dateFin": "2025-02-10",
       "description": "Conception avancée de bâtiments.",
       "candidats": [
-        "C9"
+        "C9",
+        "7d3b",
+        "9a8c",
+        "b8ac"
       ]
     },
     {

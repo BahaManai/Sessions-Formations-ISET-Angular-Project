@@ -4,7 +4,7 @@ import { Session } from '../../Models/session';
 import { FormationServiceService } from '../../Services/formation-service.service';
 import { SessionServiceService } from '../../Services/session-service.service';
 import { FormateurServiceService } from '../../Services/formateur-service.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Candidat } from '../../Models/candidat';
 
 @Component({
@@ -25,7 +25,8 @@ export class DetailsFormationComponent implements OnInit {
     private activeRoute: ActivatedRoute,
     private formationService: FormationServiceService,
     private sessionService: SessionServiceService,
-    private formateurService: FormateurServiceService
+    private formateurService: FormateurServiceService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -42,32 +43,9 @@ export class DetailsFormationComponent implements OnInit {
       });
     });
   }
-
+  redirectToInscription(idsession: string): void {
+    this.router.navigate(['/public-space/inscription',idsession]);
+  }
   
-
-  /* openInscriptionModal(session: Session): void {
-    if (session.candidats.length < 15) {
-      const candidat: Candidat = new Candidat(
-        '', 
-        this.nomCandidat, 
-        this.prenomCandidat, 
-        this.emailCandidat, 
-        0,
-        '',
-        '' 
-      );
-
-      session.candidats.push(candidat.id);
-      this.sessionService.updateSession(session).subscribe((updatedSession) => {
-        alert("Inscription réussie !");
-      });
-
-      this.nomCandidat = '';
-      this.prenomCandidat = '';
-      this.emailCandidat = '';
-    } else {
-      alert("Le nombre de candidats inscrits est déjà complet.");
-    }
-  }*/
 
 }

@@ -27,7 +27,7 @@
         <td>{{formateur.telephone}}</td>
         <td>{{formateur.numCIN}}</td>
         <td><img [src]="formateur.photo" alt="Photo de {{formateur.nom}}" width="50"></td>
-        <td><a [href]="formateur.cv" target="_blank">Voir CV</a></td>
+        <td><a class="btn btn-success" [href]="formateur.cv" target="_blank">Voir CV</a></td>
         <td>{{formateur.specialites.join(', ')}}</td>
         <td><a class="btn btn-primary" [routerLink]="['/admin-space/formateurs', 'edit', formateur.id]">Editer</a></td>
         <td><button class="btn btn-danger" (click)="deleteFormateur(formateur.id)">Supprimer</button></td>

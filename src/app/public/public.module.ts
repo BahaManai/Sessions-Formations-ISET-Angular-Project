@@ -7,18 +7,22 @@ import { RechercheFormationComponent } from './recherche-formation/recherche-for
 import { AccueilComponent } from './accueil/accueil.component';
 import { SearchModuleComponent } from "./search-module/search-module.component";
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
+import { AddCandidatComponent } from './add-candidat/add-candidat.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AccueilComponent,
     DetailsFormationComponent,
     RechercheFormationComponent,
+    AddCandidatComponent
   ],
   imports: [
     CommonModule,
     ModuleEspacePublicRoutingModule,
     SearchModuleComponent,
-    NavBarComponent
+    NavBarComponent,
+    FormsModule
 ]
 })
 export class PublicModule { }
