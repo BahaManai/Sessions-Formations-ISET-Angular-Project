@@ -8,6 +8,8 @@ import { RechercheFormationComponent } from './recherche-formation/recherche-for
 import { AddFormationComponent } from './add-formation/add-formation.component';
 import { EditFormationComponent } from './edit-formation/edit-formation.component';
 import { FormsModule } from '@angular/forms';
+import { AddSessionComponent } from './add-session/add-session.component';
+import { EditSessionComponent } from './edit-session/edit-session.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { FormsModule } from '@angular/forms';
     DetailsFormationComponent,
     RechercheFormationComponent,
     AddFormationComponent,
-    EditFormationComponent
+    EditFormationComponent,
+    AddSessionComponent,
+    EditSessionComponent
   ],
   imports: [
     CommonModule,

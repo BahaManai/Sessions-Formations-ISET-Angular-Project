@@ -34,4 +34,35 @@ export class SessionServiceService {
   deleteSession(id : string):Observable<Session>{
           return this.httpClient.delete<Session>(this.baseURL+"/"+id)
     }
+    addSession(formationId: string,formateurs: string[],dateDeb: Date,dateFin: Date,description: string,candidats: string[]
+    ): Observable<Session> {
+      return this.httpClient.post<Session>(
+        this.baseURL,
+        JSON.stringify({
+          formationId: formationId,
+          formateurs: formateurs,
+          dateDeb: dateDeb,
+          dateFin: dateFin,
+          description: description,
+          candidats: candidats,
+        }),
+        this.options
+      );
+    }
+    editSession(session: Session): Observable<Session> {
+      return this.httpClient.put<Session>(
+        `${this.baseURL}/${session.id}`,
+        JSON.stringify({
+          formationId: session.formationId,
+          dateDeb: session.dateDeb,
+          dateFin: session.dateFin,
+          description: session.description,
+          formateurs: session.formateurs,
+          candidats: session.candidats
+        }),
+        this.options
+      );
+    }
+    
+    
 }

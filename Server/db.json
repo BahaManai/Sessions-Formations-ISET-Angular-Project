@@ -102,6 +102,24 @@
         "Développement_web"
       ],
       "id": "3900"
+    },
+    {
+      "id": "2caf",
+      "titre": "Formation sur Ruby on Rails 2",
+      "description": "SDVFS¨VQSFS",
+      "chargeHoraire": 20,
+      "programme": "https://example.com/programmes/RUBY.pdf",
+      "niveau": "avancé",
+      "tags": [
+        "Ruby",
+        "Ruby on Rails",
+        "framework",
+        "développement web"
+      ],
+      "categories": [
+        "Informatique",
+        "Développement_web"
+      ]
     }
   ],
   "formateurs": [
@@ -233,20 +251,6 @@
   ],
   "sessions": [
     {
-      "id": "S1",
-      "formationId": "1",
-      "formateurs": [
-        "F1"
-      ],
-      "dateDeb": "2024-03-01",
-      "dateFin": "2024-03-05",
-      "description": "Session de formation Angular pour débutants.",
-      "candidats": [
-        "C1",
-        "C2"
-      ]
-    },
-    {
       "id": "S2",
       "formationId": "2",
       "formateurs": [
@@ -262,32 +266,19 @@
       ]
     },
     {
-      "id": "S3",
-      "formationId": null,
-      "formateurs": [
-        "F2"
-      ],
-      "dateDeb": "2025-09-10",
-      "dateFin": "2025-09-20",
-      "description": "Introduction à la mécanique automobile.",
-      "candidats": [
-        "C5",
-        "C6"
-      ]
-    },
-    {
-      "id": "S4",
-      "formationId": null,
-      "formateurs": [
-        "F2"
-      ],
-      "dateDeb": "2024-11-15",
+      "formationId": 1,
+      "dateDeb": "2025-01-10",
       "dateFin": "2024-11-20",
-      "description": "Formation en électricité industrielle pour intermédiaires.",
+      "description": "rfgRZGRZgergz....",
+      "formateurs": [
+        "F2"
+      ],
       "candidats": [
         "C7",
-        "C8"
-      ]
+        "C8",
+        "C9"
+      ],
+      "id": "S4"
     },
     {
       "id": "S5",
@@ -303,18 +294,18 @@
       ]
     },
     {
-      "id": "S7",
       "formationId": "1",
-      "formateurs": [
-        "F1"
-      ],
       "dateDeb": "2024-09-01",
       "dateFin": "2024-09-05",
-      "description": "Session rapide sur Angular pour débutants.",
+      "description": "Session rapide sur Angular pour débutants....",
+      "formateurs": [
+        "F2"
+      ],
       "candidats": [
         "C4",
         "C5"
-      ]
+      ],
+      "id": "S7"
     },
     {
       "id": "S8",
@@ -341,6 +332,22 @@
       "description": "Introduction rapide à React JS pour développeurs.",
       "candidats": [
         "C8",
+        "C9"
+      ]
+    },
+    {
+      "id": "5c32",
+      "formationId": "5",
+      "formateurs": [
+        "F1",
+        "F3"
+      ],
+      "dateDeb": "2025-01-04",
+      "dateFin": "2025-01-11",
+      "description": "VVERQG",
+      "candidats": [
+        "C1",
+        "C3",
         "C9"
       ]
     }

@@ -14,7 +14,7 @@
     </div>
     <div class="mt-4">
       <h3>Sessions :</h3>
-      <button [routerLink]="['/admin-space/addSession', formation.id]" class="btn btn-success mb-3">Ajouter une session</button>
+      <button [routerLink]="['/admin-space/addsession', formation.id]" class="btn btn-success mb-3">Ajouter une session</button>
 
       <ul class="list-group">
         @for (session of sessions; track $index){
