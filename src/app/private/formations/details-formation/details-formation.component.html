@@ -14,6 +14,8 @@
     </div>
     <div class="mt-4">
       <h3>Sessions :</h3>
+      <button [routerLink]="['/admin-space/addSession', formation.id]" class="btn btn-success mb-3">Ajouter une session</button>
+
       <ul class="list-group">
         @for (session of sessions; track $index){
         <li class="list-group-item">
@@ -24,25 +26,15 @@
           <br />
           <strong>Date de fin : </strong> {{ session.dateFin | date:'dd/MM/yyyy' }}
           <br />
-          <!-- <button *ngIf="session.candidats.length < 15" 
-                class="btn btn-success" 
-                (click)="openInscriptionModal(session)">
-          S'inscrire
-        </button>
-        <button *ngIf="session.candidats.length >= 15" 
-                class="btn btn-secondary" 
-                disabled>
-          Session complète
-        </button> -->
-
+          <strong>Description: </strong> {{ session.description }}
+          <br />
+          <strong>ID Candidats : </strong> {{ session.candidats.join(", ") }}
+          <br />
+          <a class="btn btn-primary" [routerLink]="['/admin-space/sessions', session.id]">Editer</a>
+          <button class="btn btn-danger" (click)="deleteSession(session.id)">Supprimer</button>
         </li>
-        <!--}-->}
+        }
       </ul>
-    </div>
-    <div class="text-center mt-4">
-      <a class="btn btn-primary" [href]="formation.programme" target="_blank">
-        Voir le programme
-      </a>
     </div>
   </div>
   

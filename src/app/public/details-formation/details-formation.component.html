@@ -24,19 +24,21 @@
           <br />
           <strong>Date de fin : </strong> {{ session.dateFin | date:'dd/MM/yyyy' }}
           <br />
-          <!-- <button *ngIf="session.candidats.length < 15" 
+          <strong>Nombre de candidats : </strong> {{ session.candidats.length }}
+          <br />
+          <button *ngIf="session.candidats.length < 15" 
                 class="btn btn-success" 
-                (click)="openInscriptionModal(session)">
+                > <!--(click)="openInscriptionModal(session)"-->
           S'inscrire
         </button>
         <button *ngIf="session.candidats.length >= 15" 
                 class="btn btn-secondary" 
                 disabled>
           Session complète
-        </button> -->
+        </button> 
 
         </li>
-        <!--}-->}
+        }
       </ul>
     </div>
     <div class="text-center mt-4">

@@ -148,99 +148,6 @@
       ]
     }
   ],
-  "sessions": [
-    {
-      "id": "S1",
-      "formationId": "1",
-      "formateurs": [
-        "F1"
-      ],
-      "dateDeb": "2024-03-01",
-      "dateFin": "2024-03-05",
-      "description": "Session de formation Angular pour débutants."
-    },
-    {
-      "id": "S2",
-      "formationId": "2",
-      "formateurs": [
-        "F1",
-        "F2"
-      ],
-      "dateDeb": "2025-06-01",
-      "dateFin": "2025-06-05",
-      "description": "Session avancée pour maîtriser React."
-    },
-    {
-      "id": "S3",
-      "formationId": null,
-      "formateurs": [
-        "F2"
-      ],
-      "dateDeb": "2025-09-10",
-      "dateFin": "2025-09-20",
-      "description": "Introduction à la mécanique automobile."
-    },
-    {
-      "id": "S4",
-      "formationId": null,
-      "formateurs": [
-        "F2"
-      ],
-      "dateDeb": "2024-11-15",
-      "dateFin": "2024-11-20",
-      "description": "Formation en électricité industrielle pour intermédiaires."
-    },
-    {
-      "id": "S5",
-      "formationId": "5",
-      "formateurs": [
-        "F3"
-      ],
-      "dateDeb": "2025-02-01",
-      "dateFin": "2025-02-10",
-      "description": "Conception avancée de bâtiments."
-    },
-    {
-      "id": "S6",
-      "formationId": "1",
-      "formateurs": [
-        "F1"
-      ],
-      "dateDeb": "2025-07-15",
-      "dateFin": "2025-07-20",
-      "description": "Session d'été pour les débutants en Angular."
-    },
-    {
-      "id": "S7",
-      "formationId": "1",
-      "formateurs": [
-        "F1"
-      ],
-      "dateDeb": "2024-09-01",
-      "dateFin": "2024-09-05",
-      "description": "Session rapide sur Angular pour débutants."
-    },
-    {
-      "id": "S8",
-      "formationId": "2",
-      "formateurs": [
-        "F1"
-      ],
-      "dateDeb": "2025-10-01",
-      "dateFin": "2025-10-07",
-      "description": "Session avancée sur React JS pour intermédiaires."
-    },
-    {
-      "id": "S9",
-      "formationId": "2",
-      "formateurs": [
-        "F1"
-      ],
-      "dateDeb": "2024-05-10",
-      "dateFin": "2024-05-15",
-      "description": "Introduction rapide à React JS pour développeurs."
-    }
-  ],
   "candidats": [
     {
       "id": "C1",
@@ -322,6 +229,120 @@
       "numCIN": 22334455,
       "photo": "https://example.com/photos/thomas.jpg",
       "motDePasse": "motdepasse123"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "S1",
+      "formationId": "1",
+      "formateurs": [
+        "F1"
+      ],
+      "dateDeb": "2024-03-01",
+      "dateFin": "2024-03-05",
+      "description": "Session de formation Angular pour débutants.",
+      "candidats": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "id": "S2",
+      "formationId": "2",
+      "formateurs": [
+        "F1",
+        "F2"
+      ],
+      "dateDeb": "2025-06-01",
+      "dateFin": "2025-06-05",
+      "description": "Session avancée pour maîtriser React.",
+      "candidats": [
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "id": "S3",
+      "formationId": null,
+      "formateurs": [
+        "F2"
+      ],
+      "dateDeb": "2025-09-10",
+      "dateFin": "2025-09-20",
+      "description": "Introduction à la mécanique automobile.",
+      "candidats": [
+        "C5",
+        "C6"
+      ]
+    },
+    {
+      "id": "S4",
+      "formationId": null,
+      "formateurs": [
+        "F2"
+      ],
+      "dateDeb": "2024-11-15",
+      "dateFin": "2024-11-20",
+      "description": "Formation en électricité industrielle pour intermédiaires.",
+      "candidats": [
+        "C7",
+        "C8"
+      ]
+    },
+    {
+      "id": "S5",
+      "formationId": "5",
+      "formateurs": [
+        "F3"
+      ],
+      "dateDeb": "2025-02-01",
+      "dateFin": "2025-02-10",
+      "description": "Conception avancée de bâtiments.",
+      "candidats": [
+        "C9"
+      ]
+    },
+    {
+      "id": "S7",
+      "formationId": "1",
+      "formateurs": [
+        "F1"
+      ],
+      "dateDeb": "2024-09-01",
+      "dateFin": "2024-09-05",
+      "description": "Session rapide sur Angular pour débutants.",
+      "candidats": [
+        "C4",
+        "C5"
+      ]
+    },
+    {
+      "id": "S8",
+      "formationId": "2",
+      "formateurs": [
+        "F1"
+      ],
+      "dateDeb": "2025-10-01",
+      "dateFin": "2025-10-07",
+      "description": "Session avancée sur React JS pour intermédiaires.",
+      "candidats": [
+        "C6",
+        "C7"
+      ]
+    },
+    {
+      "id": "S9",
+      "formationId": "2",
+      "formateurs": [
+        "F1"
+      ],
+      "dateDeb": "2024-05-10",
+      "dateFin": "2024-05-15",
+      "description": "Introduction rapide à React JS pour développeurs.",
+      "candidats": [
+        "C8",
+        "C9"
+      ]
     }
   ]
 }

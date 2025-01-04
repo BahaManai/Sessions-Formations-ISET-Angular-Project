@@ -31,5 +31,7 @@ export class SessionServiceService {
   updateSession(session: Session): Observable<Session> {
     return this.httpClient.put<Session>(this.baseURL+"/"+session.id, session, this.options);
   }
-  
+  deleteSession(id : string):Observable<Session>{
+          return this.httpClient.delete<Session>(this.baseURL+"/"+id)
+    }
 }

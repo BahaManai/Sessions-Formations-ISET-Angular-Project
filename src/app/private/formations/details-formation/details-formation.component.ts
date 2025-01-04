@@ -51,4 +51,11 @@ export class DetailsFormationComponent implements OnInit {
     return noms.join(", ");
   }
 
+  deleteSession(id: string) {
+    if (confirm("Êtes-vous sûr de vouloir supprimer cette session ?")) {
+      this.sessionService.deleteSession(id).subscribe(
+        sessionDeleted => this.sessions = this.sessions?.filter(session => session!.id !== sessionDeleted.id)
+      );
+    }
+  }
 }
